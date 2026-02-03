@@ -1,18 +1,18 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Daily Motivation</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
+<div class="input-row">
+  <input id="taskInput" type="text" placeholder="Task title" />
+</div>
 
-<h2>Daily Motivation</h2>
+<div class="input-row" style="margin-top:10px;">
+  <input id="category" type="text" placeholder="Category (FR / AFM / SPOM)" />
+  <select id="priority">
+    <option>High</option>
+    <option>Medium</option>
+    <option>Low</option>
+  </select>
+</div>
 
-<input id="taskInput" placeholder="Enter task">
-<button onclick="addTask()">Add</button>
+<div class="input-row" style="margin-top:10px;">
+  <input id="dueDate" type="date" />
+  <button onclick="addTask()">Add</button>
+</div>
 
-<ul id="taskList"></ul>
-
-<script src="script.js"></script>
-</body>
-</html>
